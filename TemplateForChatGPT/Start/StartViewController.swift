@@ -24,8 +24,8 @@ class StartViewController: UIViewController {
         return label
     }()
     
-    private let nextButton: UIButton = {
-        let button = UIButton(type: .system)
+    private let nextButton: BaseButton = {
+        let button = BaseButton(type: .system)
         button.setTitle("Next", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
@@ -51,9 +51,6 @@ class StartViewController: UIViewController {
         ageLabel.text = viewModel.ageText
     }
     
-    @objc private func nextButtonTapped() {
-        navigator?.navigate(to: .userView)
-    }
 }
 
 extension StartViewController {
@@ -62,6 +59,12 @@ extension StartViewController {
         setupConstraints()
         setColors()
         setNavigationBar()
+        
+        nextButton.tapHandler = { [weak self] _ in
+            guard let self else { return }
+            navigator?.navigate(to: .userView)
+        }
+
     }
 
     private func addSubviews() {
@@ -69,7 +72,6 @@ extension StartViewController {
         view.addSubview(ageLabel)
         view.addSubview(nextButton)
         
-        nextButton.addTarget(self, action: #selector(nextButtonTapped), for: .touchUpInside)
 
     }
 

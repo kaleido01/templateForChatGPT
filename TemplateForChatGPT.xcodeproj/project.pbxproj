@@ -24,6 +24,7 @@
 		A583F62B2AEE4B5600B79E72 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583F62A2AEE4B5600B79E72 /* UserViewController.swift */; };
 		A583F62D2AEE4BFC00B79E72 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583F62C2AEE4BFC00B79E72 /* UserViewModel.swift */; };
 		A583F62F2AEE4CE100B79E72 /* UserNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583F62E2AEE4CE100B79E72 /* UserNavigator.swift */; };
+		A583F6312AF356B400B79E72 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583F6302AF356B400B79E72 /* BaseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 		A583F62A2AEE4B5600B79E72 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		A583F62C2AEE4BFC00B79E72 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		A583F62E2AEE4CE100B79E72 /* UserNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNavigator.swift; sourceTree = "<group>"; };
+		A583F6302AF356B400B79E72 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
 		F5A59626CBF8B46E4D4334A2 /* Pods-TemplateForChatGPT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TemplateForChatGPT.debug.xcconfig"; path = "Target Support Files/Pods-TemplateForChatGPT/Pods-TemplateForChatGPT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				A583F61D2AEA322000B79E72 /* BaseView.swift */,
+				A583F6302AF356B400B79E72 /* BaseButton.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				A583F5EF2AEA281C00B79E72 /* SceneDelegate.swift in Sources */,
 				A583F61E2AEA322000B79E72 /* BaseView.swift in Sources */,
 				A583F62F2AEE4CE100B79E72 /* UserNavigator.swift in Sources */,
+				A583F6312AF356B400B79E72 /* BaseButton.swift in Sources */,
 				A583F6262AEE0EF900B79E72 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
