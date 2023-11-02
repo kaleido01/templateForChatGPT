@@ -24,13 +24,6 @@ class UserViewController: UIViewController {
         return label
     }()
     
-    private let nextButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Next", for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
-    
     init() {
         super.init(nibName: nil, bundle: nil)
     }
@@ -62,7 +55,6 @@ extension UserViewController {
     private func addSubviews() {
         view.addSubview(nameLabel)
         view.addSubview(ageLabel)
-        view.addSubview(nextButton)
     }
 
     private func setupConstraints() {
@@ -71,10 +63,6 @@ extension UserViewController {
         
         ageLabel.centerX == view.centerX
         ageLabel.top == nameLabel.bottom + 15.0
-        
-        nextButton.centerX == view.centerX
-        nextButton.bottom == view.bottom - 50.0
-        
     }
 
     private func setColors() {
